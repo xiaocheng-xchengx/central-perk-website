@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src = "js/central-perk.js"></script>
+    <title>Central Perk Menu</title>
+  </head>
+  <body>
+	<a href="#skip" class="skip">Skip to Main Content</a>
+  	<header>
+  		<div class = "nav-bar">
+  			<img src="images/central-perk-logo.png" alt="logo of central perk cafe." class="logo">
+  			<div class="container" onclick="toggleMenu()" id="hamburger">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+  		</div>
+	  	<nav id="mobile-menu">
+		  	<ul class = "nav-menu">
+			  <li class = "nav-link"><a href="index.html">Menu</a></li>
+			  <li class = "nav-link"><a href="playbook.html">Playbook</a></li>
+			  <li class = "nav-link"><a href="about.html">About</a></li>
+			  <li class = "nav-link"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <main>
+
+		<h1>Our Menu</h1>
+		<p class = "sub-heading">Proudly presented by Central Perk</p>
+
+		<div class = "img-group">
+	    	<div>
+	    		<img src="images/menu_meatball_sub.jpeg" alt="a sub with cheese and four meatballs, on a plate">
+	    		<p>Joey's Meatball Sub</p>
+	    	</div>
+	    	<div>
+	    		<img src="images/menu_meatball_sub.jpeg" alt="a sub with cheese and four meatballs, on a plate">
+	    		<p>The Moist Maker</p>
+	    	</div>
+	    	<div>
+	    		<img src="images/menu_meatball_sub.jpeg" alt="a sub with cheese and four meatballs, on a plate">
+	    		<p>Mama's Little Bakery Cheesecake</p>
+	    	</div>
+	    	<div>
+	    		<img src="images/menu_meatball_sub.jpeg" alt="a sub with cheese and four meatballs, on a plate">
+	    		<p>Feet-smelling Trifle?!</p>
+	    	</div>
+	    	<div>
+	    		<img src="images/menu_meatball_sub.jpeg" alt="a sub with cheese and four meatballs, on a plate">
+	    		<p>Pheobe's Secret Cookies</p>
+	    	</div>
+	    	<div>
+	    		<img src="images/menu_meatball_sub.jpeg" alt="a sub with cheese and four meatballs, on a plate">
+	    		<p>Backup Lasagna</p>
+	    	</div>
+	    	<div>
+	    		<img src="images/menu_meatball_sub.jpeg" alt="a sub with cheese and four meatballs, on a plate">
+	    		<p>That Classic Cup of Coffee</p>
+	    	</div>
+	    	<div>
+	    		<img src="images/menu_meatball_sub.jpeg" alt="a sub with cheese and four meatballs, on a plate">
+	    		<p>You-know-what Salad</p>
+	    	</div>
+	    	<div>
+	    		<img src="images/menu_meatball_sub.jpeg" alt="a sub with cheese and four meatballs, on a plate">
+	    		<p>Joey's Pizza</p>
+	    	</div>
+    	</div>
+
+  	</main>
+
+	<footer>
+	  <p>Katherine Cheng &#169; 2020</p>
+	</footer>
+
+	<script>
+	function myFunction(z) {
+		var y = document.getElementById("mobile-menu");
+		if (z.matches) {
+			if (y.style.display === "none") {
+				y.style.display = "block";
+			}
+		}
+	}
+	var z = window.matchMedia("(min-width: 850px)")
+	myFunction(z)
+	z.addListener(myFunction)
+	</script>
+    
+  </body>
+</html>
