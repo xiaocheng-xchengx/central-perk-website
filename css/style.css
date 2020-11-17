@@ -155,6 +155,12 @@ nav {
 .img-group img{
   width: 90vw;
 }
+.img-group div:hover{
+  margin-top: -10px;
+  opacity: 80%;
+  -webkit-transition: 0.3s ease-in;
+          transition: 0.3s ease-in;
+}
 .img-center {
   text-align: center;
   margin-top: 30px;
@@ -233,10 +239,8 @@ nav {
   display: none;
   grid-template-columns: auto auto auto;
   grid-column-gap: 60px;
+  grid-row-gap: 5px;
   justify-content: center;
-}
-.mini-figures img{
-  height: 10vh;
 }
 .mini-figures .phoebe:hover{
   content: url('../images/phoebe-with-smelly-cat.png');
@@ -335,8 +339,8 @@ input[type=submit]:hover {
 	  .img-group {
 	  	width: 80vw;
 	    grid-template-columns: 1fr 1fr;
-	    grid-column-gap: 10px;
-	    grid-row-gap: 10px;
+	    grid-column-gap: 20px;
+	    grid-row-gap: 20px;
 	  }
 	  .img-group img{
 	    width: 45vw;
@@ -432,12 +436,10 @@ input[type=submit]:hover {
 
   /*contact*/
   .mini-figures {
-    display: flex;
-    justify-content: center;
+    display: grid;
   }
   .mini-figures img{
     height: 15vh;
-    padding: 20px;
   }
   form{
     width: 70%;
@@ -518,4 +520,9 @@ input[type=submit]:hover {
   .change .bar1, .change .bar2, .change .bar3{
     background-color: #edbe00;
   }
+
+  .img-group div:hover{
+	  -webkit-transition: none;
+	          transition: none;
+      }
 }
