@@ -35,7 +35,7 @@ a.skip{
   top: -100px;
   -webkit-transition: top 1s ease-out;
           transition: top 1s ease-out;
-  z-index: 1;
+  z-index: 2000;
 }
 a.skip:focus{
   top:10px;
@@ -76,6 +76,7 @@ header {
   padding-top: 20px;
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
 .nav-bar {
   width: 100%;
@@ -331,10 +332,36 @@ input[type=submit]:hover {
 }
 
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 540px){
+  main {
+    margin-top: 40vh;
+  }
 	.nav-bar .logo{
-	    width: 10vw;
-	  }
+		width: 15vw;
+	}
+	.nav-bar {
+    justify-content: center;
+	}
+	.nav-bar .container{
+    display: none;
+	}
+	nav {
+	  background-color: #35541f;
+	  width: 100%;
+	  bottom: 0;
+	  display: block;
+	}
+  .nav-menu{
+    height: 18vh;
+  }
+  .nav-link a {
+    font-size: 0.8em;
+    color: white;
+  }
+  .active a{
+    border-bottom: 2px solid #c29006;
+  }
+
 	/*menu*/
 	  .img-group {
 	  	width: 80vw;
@@ -356,21 +383,41 @@ input[type=submit]:hover {
 	  .image-gallery img{
 	  	width: 70vw;
 	  }  
+
+  /*contact*/
+  .bg-image{
+    background-attachment: fixed;     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    background-image: url(../images/central-perk-bg.png);
+  }
 }
 
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1024px){
+  main {
+    margin-top: 20vh;
+  }
   header{
     flex-direction: row;
-  }
-  .nav-bar .container {
-    display: none;
   }
   nav {
     display: block;
     margin-right: 20px;
     width: 60vw;
   }
+  .nav-bar {
+  	display: block;
+  	justify-content: space-between;
+  }
+  .nav-bar .container{
+  	display: none;
+  }
+  .nav-bar .logo{
+  	width: 10vw;
+  	}
   .nav-menu{
     flex-direction: row;
     height: auto;
@@ -379,8 +426,6 @@ input[type=submit]:hover {
     background-color: #264511;
   }
   .nav-link a {
-    color: white;
-    font-size: 0.8em;
     text-align: left;
   }
   .nav-link a:hover, .nav-link a:focus {
@@ -468,14 +513,6 @@ input[type=submit]:hover {
   }
   label {
     width: 25%;
-  }
-  .bg-image{
-    background-attachment: fixed;     
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    background-image: url(../images/central-perk-bg.png);
   }
 }
 

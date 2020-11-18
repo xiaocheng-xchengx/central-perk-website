@@ -77,9 +77,21 @@
         }
       }
     }
-    var z = window.matchMedia("(min-width: 850px)")
+    var z = window.matchMedia("(min-width: 1024px)")
     myFunction(z)
     z.addListener(myFunction)
+
+    function myFunctionTwo(a) {
+      var b = document.getElementById("mobile-menu");
+      if (a.matches) {
+        b.style.display = "block";
+      }else{
+        b.style.display = "none";
+      }
+    }
+    var a = window.matchMedia("(min-width: 540px)")
+    myFunction(a)
+    a.addListener(myFunctionTwo)
     </script>
     
   </body>
