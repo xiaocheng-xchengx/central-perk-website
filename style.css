@@ -198,7 +198,7 @@ nav {
   width: 100%;
 }
 .flip-card-back {
-  background-color: #35541f;
+  background-color: #1a2e0c;
   color: white;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -210,6 +210,10 @@ nav {
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
+}
+.flip-card-back-text .flip-card-text-bold{
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 
